@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha-phantomjs node-browser-test/index.html"
+    "test": "mocha-phantomjs node-browser-test/index.html",
+    "ci":"npm run test && codecov test/coverage/cobertura-coverage.xml"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/favers/mocha-demo#readme",
   "devDependencies": {
     "chai": "^3.5.0",
+    "codecov": "^1.0.1",
     "mocha": "^3.1.2",
     "mocha-phantomjs": "^4.1.0"
   }
